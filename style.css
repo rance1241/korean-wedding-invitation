@@ -814,3 +814,49 @@ h1, h2 {
     width: 100%;
   }
 }
+
+
+/* =========================
+   VERSION 3 — FAMILY INTRO
+   ========================= */
+
+.family-intro {
+  width: min(560px, 100%);
+  margin: 0 auto;
+  padding: 34px 20px 8px;
+  text-align: center;
+}
+
+.family-intro p {
+  margin: 0;
+  font-size: .92rem;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+.family-intro p span {
+  color: var(--ink);
+}
+
+.family-intro p strong {
+  margin-left: 4px;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.family-divider {
+  width: 32px;
+  height: 1px;
+  margin: 14px auto;
+  background: var(--warm);
+}
+
+@media (max-width: 480px) {
+  .family-intro {
+    padding-top: 28px;
+  }
+
+  .family-intro p {
+    font-size: .88rem;
+  }
+}
