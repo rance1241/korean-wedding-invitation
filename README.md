@@ -1,4 +1,4 @@
-# 형주 & Jenna 모바일 청첩장 — Version 8
+# 형주 & Jenna 모바일 청첩장 — Version 9
 
 ## 이번 버전 변경사항
 
@@ -60,3 +60,10 @@
   - gallery-17.jpg
 - Old engagement image filenames were removed to prevent accidental use
 - ZIP is packaged with files directly at the root for easier GitHub upload
+
+
+## Version 9 변경사항
+
+- D-Day countdown을 사진 갤러리 바로 아래로 이동
+- 예식 안내와 오시는 길 사이의 여백 축소
+- `Jenna는 한국 계좌가 없어 별도의 계좌 안내를 하지 않습니다.` 문구를 더 크게 표시

@@ -864,3 +864,31 @@ h1, h2 {
     line-height: 1.75;
   }
 }
+
+
+/* =========================
+   VERSION 9 — COUNTDOWN + SPACING
+   ========================= */
+
+.account-footnote {
+  font-size: .95rem;
+  line-height: 1.75;
+  color: var(--ink);
+  margin-top: 22px;
+  font-weight: 500;
+}
+
+/* Reduce the vertical gap before the location section. */
+.directions {
+  padding-top: 42px;
+}
+
+@media (max-width: 480px) {
+  .account-footnote {
+    font-size: .9rem;
+  }
+
+  .directions {
+    padding-top: 32px;
+  }
+}
