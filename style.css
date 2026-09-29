@@ -821,42 +821,46 @@ h1, h2 {
    ========================= */
 
 .family-intro {
-  width: min(560px, 100%);
-  margin: 0 auto;
-  padding: 34px 20px 8px;
+  width: min(620px, calc(100% - 20px));
+  margin: 28px auto 0;
+  padding: 22px 18px;
   text-align: center;
+  background: #efe5d8;
+  border: 1px solid rgba(44,41,38,.10);
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(44,41,38,.05);
 }
 
 .family-intro p {
   margin: 0;
-  font-size: .92rem;
-  line-height: 1.8;
-  color: var(--muted);
-}
-
-.family-intro p span {
+  font-size: 1.08rem;
+  line-height: 1.85;
   color: var(--ink);
+  letter-spacing: .01em;
 }
 
 .family-intro p strong {
-  margin-left: 4px;
-  color: var(--ink);
-  font-weight: 600;
+  display: inline-block;
+  font-weight: 700;
 }
 
 .family-divider {
-  width: 32px;
+  width: 40px;
   height: 1px;
-  margin: 14px auto;
-  background: var(--warm);
+  margin: 16px auto;
+  background: rgba(44,41,38,.18);
 }
 
 @media (max-width: 480px) {
   .family-intro {
-    padding-top: 28px;
+    width: calc(100% - 12px);
+    margin-top: 22px;
+    padding: 18px 14px;
+    border-radius: 16px;
   }
 
   .family-intro p {
-    font-size: .88rem;
+    font-size: .98rem;
+    line-height: 1.75;
   }
 }
