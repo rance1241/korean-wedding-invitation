@@ -1,46 +1,59 @@
-# 형주 & Jenna 모바일 청첩장 — Version 1
+# 형주 & Jenna 모바일 청첩장 — Version 2
 
-이 파일들은 `invite.hyungjooandjenna.com` 용으로 만든 별도의 한국어 모바일 청첩장입니다.
+## 이번 버전 변경사항
 
-## 포함된 내용
+- `당일 일정` 섹션 삭제
+- `참석 여부` 바로 앞에 `축하의 마음 전하기` 추가
+- 신랑 김형주:
+  - 신한은행
+  - 110-376-850975
+  - 계좌번호 클릭 시 자동 복사
+- 김기선 (부): 계좌정보 추후 업데이트
+- 안미영 (모): 계좌정보 추후 업데이트
+- Jenna 측은 한국 계좌가 없어 계좌 섹션 없음
 
-- 한국어 전용
-- 모바일 우선 디자인
-- 결혼 날짜 / 장소
-- D-Day 카운트다운
-- Trailer 영상
-- 약혼 사진 20장 슬라이드
-- 예식 시간 안내
-- 전통혼례 40분 + 뷔페 1시간 20분 안내
-- 시간이 촉박한 하객을 위한 TV 시청 안내
-- 잠실역 4번 출구부터 상세 오시는 길
-- 네이버 지도 / 카카오맵 / Google Maps 버튼
-- 공유하기 버튼
-- 참석 여부 섹션 (현재는 추후 오픈 표시)
+## 참석 여부
 
-## GitHub에 올리는 방법
+`참석` / `불참석` 두 버튼이 있습니다.
 
-새로 만든 GitHub 저장소:
-`korean-wedding-invitation`
+버튼을 누르면 아래 입력폼이 펼쳐집니다:
 
-저장소의 최상위(root)에 다음을 모두 업로드하세요:
+- 성함
+- 연락처
+- 기타 전달 내용
+
+기타 전달 내용에는 음식 알레르기나 식이 제한도 적을 수 있도록 안내되어 있습니다.
+
+## 축하 메시지
+
+청첩장 마지막 부분에 축하 메시지 입력폼을 추가했습니다.
+
+## 매우 중요: 실제 데이터 저장
+
+GitHub + Vercel만 사용하는 정적 사이트에서는 폼 데이터를 중앙에 자동 저장할 수 없습니다.
+
+그래서 이 패키지에 Google Sheets 연결용 파일도 포함했습니다:
+
+- `google-apps-script.gs`
+- `SETUP-GOOGLE-SHEETS.md`
+
+Google Sheets 연결 전에도 UI와 버튼은 테스트할 수 있지만,
+실제 하객 응답을 한 곳에 모으려면 위 설명대로 한 번 연결해야 합니다.
+
+## GitHub 업로드
+
+Vercel에 배포되는 웹사이트 파일:
 
 - index.html
 - style.css
 - script.js
-- images 폴더
-- media 폴더
+- images/
+- media/
+
+문서/설정용 파일:
+
 - README.md
+- SETUP-GOOGLE-SHEETS.md
+- google-apps-script.gs
 
-중요: 폴더 하나를 더 만들어 그 안에 넣지 말고,
-`index.html`이 저장소 첫 화면에서 바로 보여야 합니다.
-
-## Vercel
-
-이미 `invite.hyungjooandjenna.com`이 새 Vercel 프로젝트에 연결되어 있으므로
-GitHub의 main 브랜치에 파일을 올리고 commit하면 Vercel이 자동 배포합니다.
-
-배포가 완료되면:
-`https://invite.hyungjooandjenna.com`
-
-에서 확인할 수 있습니다.
+모든 파일을 저장소 root에 올려도 괜찮습니다.

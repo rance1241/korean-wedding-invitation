@@ -555,3 +555,262 @@ h1, h2 {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* =========================
+   VERSION 2 — ACCOUNT / RSVP / GUESTBOOK
+   ========================= */
+
+.account-section {
+  background: var(--ivory);
+}
+
+.account-list {
+  width: min(620px, 100%);
+  margin: 32px auto 0;
+  display: grid;
+  gap: 12px;
+}
+
+.account-card {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: stretch;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  text-align: left;
+}
+
+.account-person {
+  padding: 19px 17px;
+  border-right: 1px solid var(--line);
+}
+
+.account-person strong,
+.account-person span {
+  display: block;
+}
+
+.account-person strong {
+  margin-top: 4px;
+  font-weight: 600;
+}
+
+.account-relation {
+  color: var(--sage);
+  font-size: .7rem;
+  letter-spacing: .04em;
+}
+
+.account-copy {
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2px;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  text-align: left;
+}
+
+.account-copy span {
+  color: var(--muted);
+  font-size: .76rem;
+}
+
+.account-copy strong {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: .02em;
+}
+
+.account-copy small {
+  margin-top: 5px;
+  color: var(--sage);
+  font-size: .68rem;
+}
+
+.account-copy:active {
+  background: rgba(143,155,134,.09);
+}
+
+.account-coming {
+  padding: 19px 18px;
+  display: flex;
+  align-items: center;
+  color: var(--muted);
+  font-size: .84rem;
+}
+
+.account-pending {
+  opacity: .78;
+}
+
+.account-footnote {
+  width: min(620px, 100%);
+  margin: 16px auto 0;
+  color: var(--muted);
+  font-size: .74rem;
+}
+
+.attendance-buttons {
+  width: min(480px, 100%);
+  margin: 30px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.attendance-choice {
+  padding: 17px 10px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+  border-radius: 2px;
+  font-size: .95rem;
+  cursor: pointer;
+}
+
+.attendance-choice.selected {
+  border-color: var(--sage);
+  background: var(--sage);
+  color: white;
+}
+
+.expandable-form,
+.guestbook-form {
+  width: min(560px, 100%);
+  margin: 22px auto 0;
+  padding: 24px 20px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  text-align: left;
+}
+
+.expandable-form[hidden] {
+  display: none;
+}
+
+.selected-attendance {
+  margin: -2px 0 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+  color: var(--sage);
+  font-size: .8rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.form-field {
+  display: block;
+  margin-bottom: 18px;
+}
+
+.form-field > span {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--ink);
+  font-size: .8rem;
+}
+
+.form-field em {
+  color: var(--sage);
+  font-style: normal;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 13px 12px;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  outline: 0;
+  background: white;
+  color: var(--ink);
+  font: inherit;
+  font-size: .9rem;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-color: var(--sage);
+}
+
+.form-field textarea {
+  resize: vertical;
+}
+
+.form-submit {
+  width: 100%;
+  padding: 14px 16px;
+  border: 0;
+  background: var(--ink);
+  color: white;
+  font-size: .88rem;
+  cursor: pointer;
+}
+
+.form-submit:disabled {
+  opacity: .55;
+  cursor: wait;
+}
+
+.form-status {
+  min-height: 1.4em;
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: .75rem;
+  text-align: center;
+}
+
+.message-list {
+  width: min(560px, 100%);
+  margin: 24px auto 0;
+  display: grid;
+  gap: 10px;
+  text-align: left;
+}
+
+.message-card {
+  padding: 16px 17px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.message-card strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: .82rem;
+}
+
+.message-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .88rem;
+  white-space: pre-wrap;
+}
+
+.message-empty {
+  padding: 18px;
+  color: var(--muted);
+  font-size: .78rem;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .account-card {
+    grid-template-columns: 118px 1fr;
+  }
+
+  .account-person {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .attendance-buttons {
+    width: 100%;
+  }
+}
