@@ -1,4 +1,4 @@
-# 형주 & Jenna 모바일 청첩장 — Version 7
+# 형주 & Jenna 모바일 청첩장 — Version 8
 
 ## 이번 버전 변경사항
 
@@ -48,3 +48,15 @@
 - 갤러리에서 기존 8번, 9번, 10번 사진 삭제
 - 갤러리 총 사진 수: 17장
 - 상단 메인 해변 사진과 나머지 기능은 그대로 유지
+
+
+## Version 8 — Gallery cleanup
+
+- Gallery contains exactly 17 photos
+- Original photos 8, 9, and 10 are removed
+- Gallery images are now renamed cleanly:
+  - gallery-01.jpg
+  - ...
+  - gallery-17.jpg
+- Old engagement image filenames were removed to prevent accidental use
+- ZIP is packaged with files directly at the root for easier GitHub upload
